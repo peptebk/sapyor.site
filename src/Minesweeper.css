@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'MinesweeperFont';
+  src: url('./assets/font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ms-number {
+  font-family: 'Impact';
+  font-weight: bold;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ms-counter {
+  font-family: 'Impact', fantasy;
+  color: red;
+  font-size: 19px;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ms-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+}
+.ms-modal {
+  background: #f3f3f3;
+  border: 3px outset #dfdfdf;
+  padding: 16px 20px;
+  min-width: 260px;
+  max-width: 90%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  position: relative;
+  text-align: center;
+  border-radius: 6px;
+}
+.ms-modal-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+.ms-modal-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.ms-modal-body {
+  font-size: 14px;
+  color: #222;
+}
